@@ -6,6 +6,7 @@ import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -13,6 +14,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -137,6 +139,22 @@ public class PickupAndDropOff extends AppCompatActivity {
         findCars.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                String start=startPt.getText().toString();
+                String end=endPt.getText().toString();
+                if (TextUtils.isEmpty(start)  ){
+
+                    startPt.setError("Please Select a City");
+                    Toast.makeText(PickupAndDropOff.this,"Enter Valid street name",Toast.LENGTH_SHORT).show();
+                }
+                if (TextUtils.isEmpty(end)){
+                    endPt.setError("Please Select a City");
+                    Toast.makeText(PickupAndDropOff.this,"Enter Valid street name",Toast.LENGTH_SHORT).show();
+
+                }
+                else
+                {
+
                 Intent intent = new Intent(PickupAndDropOff.this, CarSelection.class);
                 intent.putExtra("userData", username);
                 intent.putExtra("pickup_date", pickupDate.getText().toString());
@@ -145,8 +163,12 @@ public class PickupAndDropOff extends AppCompatActivity {
                 intent.putExtra("drop_time", dropTime.getText().toString());
                 startActivity(intent);
             }
+
+            }
         });
     }
+
+
 
     private void updateLabelPickUp() {
         String myFormat = "dd/MM/yyyy";
