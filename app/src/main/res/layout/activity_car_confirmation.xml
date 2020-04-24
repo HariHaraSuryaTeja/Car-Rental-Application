@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarConfirmation">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/nimage"
+            android:layout_width="180dp"
+            android:layout_height="180dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/Car_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp">
+        </TextView>
+        <TextView
+            android:id="@+id/Car_year"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/Car_description"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Car available!!"
+            android:textColor="@android:color/holo_green_dark"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <Button
+            android:id="@+id/nextbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/button_drawable"
+            android:text="Request a Booking"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="60sp"
+            >
+
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>

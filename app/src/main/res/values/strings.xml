@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">CarRentalsV3</string>
+    <string-array name="cities">
+        <item>Montreal</item>
+        <item>Toronto</item>
+        <item>Brampton</item>
+        <item>Quebec City</item>
+        <item>Mont Tremblant</item>
+        <item>Montreal-Ouest</item>
+        <item>St. Michel</item>
+        <item>Greenfield Park</item>
+    </string-array>
+    <string-array name="streets">
+        <item>Guy-concordia</item>
+        <item>Atwater</item>
+        <item>Peel</item>
+        <item>McGill</item>
+        <item>Mont Royal</item>
+        <item>Place-Des-Arts</item>
+        <item>Saint-Laurent</item>
+        <item>Parc</item>
+        <item>Berri-Uquam</item>
+        <item>Sherbrook</item>
+        <item>Laurier</item>
+        <item>Rosemont</item>
+        <item>Beaubien</item>
+        <item>Jean-Talon</item>
+        <item>Jarry</item>
+        <item>Cremazie</item>
+        <item>Sauve</item>
+        <item>Henri-Bourassa</item>
+        <item>Cartier</item>
+        <item>Montmorency</item>
+
+
+    </string-array>
+</resources>
