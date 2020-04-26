@@ -1,0 +1,23 @@
+{
+  "name": "carrentaldb",
+  "version": "1.0.0",
+  "description": "this is a node file for car-rental application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HariHaraSuryaTeja/Car-Rental-Application.git"
+  },
+  "author": "Hari, Akhil, vedanth, palanchi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HariHaraSuryaTeja/Car-Rental-Application/issues"
+  },
+  "homepage": "https://github.com/HariHaraSuryaTeja/Car-Rental-Application#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
